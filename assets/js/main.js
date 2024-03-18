@@ -19,35 +19,35 @@
     }
   }
 
-  // Get date of birth element
-var dobElement = document.getElementById('dob');
+//   // Get date of birth element
+// var dobElement = document.getElementById('dob');
 
-// Get date of birth string
-var dobString = dobElement.textContent.trim();
+// // Get date of birth string
+// var dobString = dobElement.textContent.trim();
 
-// Calculate age
-var age = calculateAge(dobString);
+// // Calculate age
+// var age = calculateAge(dobString);
 
-// Get age element
-var ageElement = document.getElementById('age');
+// // Get age element
+// var ageElement = document.getElementById('age');
 
-// Update age element with calculated age
-ageElement.textContent = age;
+// // Update age element with calculated age
+// ageElement.textContent = age;
 
 
-// Function to calculate age from date of birth
-  function calculateAge(dateOfBirth) {
-    var today = new Date();
-    var birthDate = new Date(dateOfBirth);
-    var age = today.getFullYear() - birthDate.getFullYear();
-    var monthDiff = today.getMonth() - birthDate.getMonth();
+// // Function to calculate age from date of birth
+//   function calculateAge(dateOfBirth) {
+//     var today = new Date();
+//     var birthDate = new Date(dateOfBirth);
+//     var age = today.getFullYear() - birthDate.getFullYear();
+//     var monthDiff = today.getMonth() - birthDate.getMonth();
     
-    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
+//     if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+//         age--;
+//     }
     
-    return age;
-  }
+//     return age;
+//   }
 
   /**
    * Easy event listener function
